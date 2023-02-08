@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- emoji font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Archivo+Black&family=Noto+Emoji:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <section id="sidebar">
+            <div id="search-city">
+                <h2>Search for a City:</h2>
+                <input type="search" placeholder="City Name">
+                <button type="submit">Search</button>
+            </div>
+            <!-- testing history buttons -->
+            <div id="history">
+                <button class="history-btn">San Diego</button>
+                <button class="history-btn">Denver</button>
+                <button class="history-btn">Seattle</button>
+                <button class="history-btn">San Francisco</button>
+                <button class="history-btn">Orlando</button>
+                <button class="history-btn">New York</button>
+                <button class="history-btn">Chicago</button>
+                <button class="history-btn">Austin</button>
+            </div>
+        </section>
+        <section id="weather">
+            <!-- testing full weather report -->
+            <section id="today">
+                <h2 class="light-stripe"><span id="city-name">Atlanta</span> - <span id="date-today">9/13/2022</span> <span class="emoji todays-icon" role="img" aria-label="sunny">☀</span></h2>
+                <ul>
+                    <li><strong>Temp:</strong> <span id="temp-today">76.62</span>°F</li>
+                    <li><strong>Wind:</strong> <span id="wind-today">8.43</span> MPH</li>
+                    <li><strong>Humidity:</strong> <span id="hum-today">44</span>%</li>
+                </ul>
+            </section>
+            <section id="five-day">
+                <h3>5-Day Forecast</h3>
+                <div id="five-day-row">
+                    <div id="day-1" class="day-box">
+                        <h4 id="date-1" class="dark-stripe">9/14/2022</h4>
+                        <div class="emoji" role="img" aria-label="sunny">☀</div>
+                        <ul>
+                            <li><strong>Temp:</strong> <span id="temp-1">63.55</span>°F</li>
+                            <li><strong>Wind:</strong> <span id="wind-1">3.94</span> MPH</li>
+                            <li><strong>Humidity:</strong> <span id="hum-1">63</span>%</li>
+                        </ul>
+                    </div>
+                    <div id="day-2" class="day-box">
+                        <h4 id="date-2" class="dark-stripe">9/15/2022</h4>
+                        <div class="emoji" role="img" aria-label="sunny">☀</div>
+                        <ul>
+                            <li><strong>Temp:</strong> <span id="temp-2">66.52</span>°F</li>
+                            <li><strong>Wind:</strong> <span id="wind-2">3.91</span> MPH</li>
+                            <li><strong>Humidity:</strong> <span id="hum-2">64</span>%</li>
+                        </ul>
+                    </div>
+                    <div id="day-3" class="day-box">
+                        <h4 id="date-3" class="dark-stripe">9/16/2022</h4>
+                        <div class="emoji" role="img" aria-label="sunny">☀</div>
+                        <ul>
+                            <li><strong>Temp:</strong> <span id="temp-3">67.71</span>°F</li>
+                            <li><strong>Wind:</strong> <span id="wind-3">3.27</span> MPH</li>
+                            <li><strong>Humidity:</strong> <span id="hum-3">64</span>%</li>
+                        </ul>
+                    </div>
+                    <div id="day-4" class="day-box">
+                        <h4 id="date-4" class="dark-stripe">9/17/2022</h4>
+                        <div class="emoji" role="img" aria-label="sunny">☀</div>
+                        <ul>
+                            <li><strong>Temp:</strong> <span id="temp-4">67.1</span>°F</li>
+                            <li><strong>Wind:</strong> <span id="wind-4">4.65</span> MPH</li>
+                            <li><strong>Humidity:</strong> <span id="hum-4">72</span>%</li>
+                        </ul>
+                    </div>
+                    <div id="day-5" class="day-box">
+                        <h4 id="date-5" class="dark-stripe">9/18/2022</h4>
+                        <div class="emoji" role="img" aria-label="overcast">&#9729;</div>
+                        <ul>
+                            <li><strong>Temp:</strong> <span id="temp-5">70.57</span>°F</li>
+                            <li><strong>Wind:</strong> <span id="wind-5">4.23</span> MPH</li>
+                            <li><strong>Humidity:</strong> <span id="hum-5">62</span>%</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
