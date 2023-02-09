@@ -10,5 +10,5 @@ A simple dashboard to show the weather and five-day forecast for any city.
 Pending.
 
 ## Links
-- [Deployed Site]()
+- [Deployed Site](https://ckboytgt.github.io/weather-dashboard/)
 - [GitHub Repo](https://github.com/CKBoytGT/weather-dashboard)
