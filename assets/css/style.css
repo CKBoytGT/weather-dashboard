@@ -151,6 +151,14 @@ main {
     padding: 0 10px;
 }
 
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
 /* search sidebar */
 #sidebar {
     display: flex;
@@ -167,6 +175,11 @@ main {
     padding-bottom: 5px;
 }
 
+#error-msg {
+    text-align: center;
+    color: #fff;
+}
+
 /* search sidebar - city history */
 #history {
     display: inherit;
@@ -175,17 +188,17 @@ main {
     padding-top: 5px;
 }
 
-.history-btn {
+#history button {
     background-color: var(--dark);
     color: var(--light);
 }
 
-.history-btn:hover {
+#history button:hover {
     background-color: var(--light);
     color: var(--dark);
 }
 
-.history-btn:active {
+#history button:active {
     background-color: #fff;
 }
 
